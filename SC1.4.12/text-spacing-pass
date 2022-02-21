@@ -1,1 +1,96 @@
+---
+title: SC 1.4.12 Text spacing - Pass
+---
 
+<style>
+  .test-textSpacing * {
+		letter-spacing: .12em !important;
+		line-height: 1.5em !important;
+		word-spacing: .16em !important;
+	}
+	.test-textSpacing p {
+		margin-bottom: 2em !important;
+	}
+
+  td {
+    height: 45px;
+  }
+  main p {
+    margin-bottom: 1em!important;
+  }
+
+</style>
+
+<section>
+	<h2>Heading 2 (<code>h2</code>)</h2>
+	<section>
+		<h3>Heading 3 (<code>h3</code>)</h3>
+		<section>
+			<h4>Heading 4 (<code>h4</code>)</h4>
+			<section>
+				<h5>Heading 5 (<code>h5</code>)</h5>
+				<section>
+					<h6>Heading 6 (<code>h6</code>)</h6>
+					<p>Paragraph - default appearance</p>
+				</section>
+			</section>
+		</section>
+	</section>
+</section>
+<p><a href="#">Link</a></p>
+<ul>
+	<li>unordered list (<code>ul</code>) - level 1
+		<ul>
+			<li>unordered list (<code>ul</code>) - level 2
+				<ul>
+					<li>unordered list (<code>ul</code>) - level 3</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ul>
+<ol>
+	<li>ordered list (<code>ol</code>) - level 1</li>
+	<li>ordered list (<code>ol</code>) - level 1
+		<ol>
+			<li>ordered list (<code>ol</code>) - level 2</li>
+			<li>ordered list (<code>ol</code>) - level 2
+				<ol>
+					<li>ordered list (<code>ol</code>) - level 3</li>
+					<li>ordered list (<code>ol</code>) - level 3</li>
+				</ol>
+			</li>
+		</ol>
+	</li>
+</ol>
+<table class="table table-striped">
+	<caption>Table caption</caption>
+	<thead>
+		<tr>
+			<th scope="col">Table header (<code>th</code>)</th>
+			<th scope="col">Table header (<code>th</code>)</th>
+			<th scope="col">Table header (<code>th</code>)</th>
+			<th scope="col">Table header (<code>th</code>)</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Table data (<code>td</code>)</td>
+			<td>Table data (<code>td</code>)</td>
+			<td>Table data (<code>td</code>)</td>
+			<td>Table data (<code>td</code>)</td>
+		</tr>
+		<tr>
+			<td>Table data (<code>td</code>)</td>
+			<td>Table data (<code>td</code>)</td>
+			<td>Table data (<code>td</code>)</td>
+			<td>Table data (<code>td</code>)</td>
+		</tr>
+		<tr>
+			<td>Table data (<code>td</code>)</td>
+			<td>Table data (<code>td</code>)</td>
+			<td>Table data (<code>td</code>)</td>
+			<td>Table data (<code>td</code>)</td>
+		</tr>
+	</tbody>
+</table>

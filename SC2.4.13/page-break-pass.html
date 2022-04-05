@@ -2,42 +2,63 @@
 title: WCAG 2.2 - SC 2.4.13 Page break navigation - Pass
 ---
 
-<nav role="doc-pagelist">
-	<h2 id="pglist">Page List</h2>
-	<ol class="list-unstyled">
-		<li><a href="#pg1">Page 1</a></li>
-		<li><a href="#pg2">Page 2</a></li>
-		<li><a href="#pg3">Page 3</a></li>
-		<li><a href="#pg4">Page 4</a></li>
-	</ol>
-</nav>
+<h2>List of pages</h2>
+  <ul>
+    <li><a href="#pg1">Page 1</a></li>
+    <li><a href="#pg2">Page 2</a></li>
+    <li><a href="#pg3">Page 3</a></li>
+  </ul>
+  
+  <span class="pg-brk-aft"></span>
+  
+  <h3 id="pg1">Page 1</h3>
+  
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt malesuada sapien at porttitor. Nunc luctus porta justo, feugiat hendrerit ante auctor ut. Nunc et odio quis nisl euismod dapibus. Mauris eget ultricies nibh. Donec posuere lacus at viverra malesuada. Morbi imperdiet, dui at imperdiet feugiat, velit mi imperdiet arcu, id semper ante libero at tellus.</p>
+  
+  <p>Phasellus iaculis lorem elit, vitae rhoncus lectus posuere vel. Vestibulum sodales sem at elit pharetra, a consectetur ante vehicula. Etiam eu accumsan est.</p>
+  
+  <p>Nunc nibh velit, lobortis eu est a, pretium fermentum metus. In imperdiet venenatis consectetur. Vestibulum nec egestas purus. Sed finibus nisl dolor. Nunc non sem scelerisque, elementum ligula quis, egestas ante. Pellentesque commodo at est vel consectetur.</p>
+  
+  <p class="pg-brk-aft">Morbi a tortor dui. Suspendisse bibendum velit vel ante euismod blandit. Donec tincidunt sapien eget posuere sagittis. Nullam et posuere est, at ullamcorper sapien. Ut pretium rutrum sodales. Maecenas sapien velit, posuere vel fringilla ac, dapibus et magna.</p>
 
-<div class="pg-brk-aft">
-	<h3 id="pg1">Page 1</h3>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed lacinia est. Quisque dignissim non lorem vitae porta. Pellentesque venenatis malesuada augue, a pretium neque lacinia eu. In sapien elit, tincidunt ac massa nec, sodales tincidunt dui. Etiam a lorem vulputate, ultricies lacus eget, pellentesque velit. Mauris dolor odio, vulputate eu venenatis id, sagittis at turpis. Sed feugiat orci tellus, eu vulputate nisi ullamcorper quis.</p>
+ <h3 id="pg2">Page 2</h3>
+ 
+ <div class="pg-brk-aft">
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi volutpat sollicitudin ante, vel consequat est posuere ut. Suspendisse efficitur placerat mi ut mollis. Phasellus molestie nunc vitae placerat consequat. Fusce nec imperdiet mauris. Nulla sed aliquet erat. Phasellus porta tincidunt posuere.</p>
+   <p>Cras ultricies blandit felis, non pharetra diam venenatis et. Sed vulputate nisl nec quam posuere, in pretium dui consectetur. Ut id augue a tellus tincidunt dictum in at nulla. Proin lobortis orci auctor, ullamcorper orci sed, faucibus ligula. Aliquam interdum euismod nisl gravida varius.</p>
+ </div>
+  
+  <h3 id="pg3">Page 2</h3>
+  <p>Nulla condimentum risus non maximus mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum sit amet purus at euismod. Sed rhoncus id ligula sit amet maximus. In non elit vitae mi interdum rhoncus a at dolor. Duis sed ex velit. Nunc auctor ex a urna aliquet tincidunt.</p>
 
-	<p>Pellentesque non augue sed ipsum varius convallis. In aliquet molestie diam sed cursus. Aliquam a nibh et nisl pulvinar rhoncus. Nulla lobortis maximus lorem quis mollis. Morbi ultricies neque vel leo cursus vulputate. Curabitur nulla magna, sagittis et dui et, elementum viverra nisl. Mauris tincidunt ex justo, sit amet tempus mi luctus vitae. Nullam sed justo semper, tempus sapien at, finibus nulla. In hac habitasse platea dictumst. Nam viverra iaculis eros id pharetra.</p>
-</div>
+<details class="mrgn-tp-lg">
+	<summary>Code</summary>
+<pre><code>&lt;h2&gt;List of pages&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#pg1"&gt;Page 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#pg2"&gt;Page 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#pg3"&gt;Page 3&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  
+  &lt;span class="pg-brk-aft"&gt;&lt;/span&gt;
+  
+  &lt;h3 id="pg1"&gt;Page 1&lt;/h3&gt;
+  
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt malesuada sapien at porttitor. Nunc luctus porta justo, feugiat hendrerit ante auctor ut. Nunc et odio quis nisl euismod dapibus. Mauris eget ultricies nibh. Donec posuere lacus at viverra malesuada. Morbi imperdiet, dui at imperdiet feugiat, velit mi imperdiet arcu, id semper ante libero at tellus.&lt;/p&gt;
+  
+  &lt;p&gt;Phasellus iaculis lorem elit, vitae rhoncus lectus posuere vel. Vestibulum sodales sem at elit pharetra, a consectetur ante vehicula. Etiam eu accumsan est.&lt;/p&gt;
+  
+  &lt;p&gt;Nunc nibh velit, lobortis eu est a, pretium fermentum metus. In imperdiet venenatis consectetur. Vestibulum nec egestas purus. Sed finibus nisl dolor. Nunc non sem scelerisque, elementum ligula quis, egestas ante. Pellentesque commodo at est vel consectetur.&lt;/p&gt;
+  
+  &lt;p class="pg-brk-aft"&gt;Morbi a tortor dui. Suspendisse bibendum velit vel ante euismod blandit. Donec tincidunt sapien eget posuere sagittis. Nullam et posuere est, at ullamcorper sapien. Ut pretium rutrum sodales. Maecenas sapien velit, posuere vel fringilla ac, dapibus et magna.&lt;/p&gt;
 
-<h3 id="pg2">Page 2</h3>
-<p>Phasellus ut fermentum tellus, et ultrices nisl. Donec sed mi at augue ultricies scelerisque. Ut vitae blandit orci. Sed velit urna, porta nec congue in, tincidunt eleifend ex. Vivamus lacinia lectus vitae ultricies suscipit. Donec facilisis leo ac sapien ullamcorper scelerisque. Pellentesque neque ex, pellentesque vitae imperdiet a, pellentesque in turpis. Morbi est elit, auctor eget ipsum sit amet, rutrum viverra felis. Curabitur semper nisl et mattis commodo. Aliquam porta lacus efficitur libero ultricies gravida. Quisque vitae congue dolor. Ut aliquet, tellus et vestibulum tempus, justo nunc mollis ipsum, vel placerat lorem urna id turpis.</p>
-
-<p>Vivamus libero quam, vehicula in viverra et, volutpat ac quam. Fusce ornare urna non justo finibus pharetra. Vivamus ultrices condimentum arcu eu sollicitudin. Vivamus in tristique nisi, ac ultricies dolor. Cras vulputate hendrerit libero in faucibus. Mauris et dui blandit, porta ante in, condimentum justo. Sed tempus aliquam est. Aliquam vel elit finibus, placerat dui non, facilisis nulla. Donec lectus enim, placerat non ipsum eu, ornare porta ante. Praesent condimentum maximus justo, pretium dapibus elit elementum quis. Maecenas commodo leo enim, ac vestibulum augue congue vel. Suspendisse lacinia porta pulvinar. In porta eget elit eu malesuada. Nunc cursus magna sed libero sollicitudin, quis tempus nibh porttitor. Aliquam tortor ligula, aliquam vel auctor vel, fringilla et diam. Integer eget aliquet neque.</p>
-
-<p>Donec imperdiet ex in turpis convallis, vulputate tristique enim bibendum. Phasellus id velit nec enim ultrices laoreet. Sed pretium ligula euismod augue placerat, quis tristique metus sollicitudin. Quisque feugiat, lectus vel tempor elementum, nisl metus ornare quam, vel bibendum ligula sem ut felis. Donec justo magna, finibus vel urna sit amet, pulvinar imperdiet mi. Nullam rhoncus ante egestas efficitur luctus. Vestibulum quis ligula sem. Nullam mauris est, congue sed faucibus vel, lacinia et justo. Nullam ac nisi egestas, eleifend tellus id, rhoncus ipsum. Phasellus et ligula fringilla, blandit justo eu, venenatis metus. Phasellus ornare ipsum sem, vel fringilla odio imperdiet at. Aliquam eget lectus a ipsum scelerisque luctus.</p>
-
-<span class="pg-brk-aft" id="pg3"></span>
-
-<div class="pg-brk-aft">
-<h3>Page 3</h3>
-<p>Sed auctor porta neque. Maecenas sagittis eros eget neque lobortis, elementum congue justo ultrices. In in accumsan eros, vitae convallis sem. Vestibulum ut porttitor tellus, id tincidunt mi. Mauris consectetur magna erat, eu rhoncus velit porttitor a. Aliquam nulla odio, porttitor eu turpis a, condimentum dapibus arcu. Integer iaculis justo at hendrerit vestibulum. Donec mollis ante in odio ullamcorper elementum at vitae odio. Mauris leo neque, egestas ut nisl nec, mollis scelerisque augue. Nunc tempor tortor dolor, id rhoncus lectus hendrerit et. Fusce eu lobortis purus. Donec ultrices elementum vestibulum. Curabitur in eleifend ipsum.</p>
-
-<p>Nullam porta in magna fringilla ornare. Pellentesque vitae eros sit amet ante mattis semper eu vel purus. Ut gravida non elit nec fermentum. Fusce vel mi dolor. Sed tempor luctus ipsum sit amet hendrerit. In pharetra tincidunt sem ut mollis. Cras cursus, eros vitae posuere laoreet, metus risus rutrum nibh, at suscipit arcu felis non ipsum. Duis varius odio laoreet tincidunt sollicitudin. Pellentesque volutpat vehicula sem quis efficitur. Curabitur convallis ornare neque quis volutpat. In nisi nisl, ultricies non ex at, imperdiet maximus neque.</p>
-
-<p>In vehicula turpis ac porta volutpat. Integer elementum ultricies ante dictum tincidunt. Nunc a libero semper, rhoncus erat sagittis, semper arcu. Nulla ac condimentum purus, at dictum odio. Donec ac fringilla justo, eu mattis nibh. Maecenas sit amet varius neque, ut consectetur ligula. Nulla bibendum commodo eros, nec tempus lorem gravida at. Nulla pulvinar imperdiet condimentum. Fusce mollis turpis id sodales suscipit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut quis mi felis. Maecenas quis metus posuere, lacinia nunc vel, tempus neque. Ut suscipit non tortor in aliquam. In faucibus iaculis quam, ac varius eros tempor at.</p>
-</div>
-
-<h3 id="pg4">Page 4</h3>
-<p>Mauris et sapien tortor. Praesent vitae mi a mauris eleifend sodales vitae vel lacus. Fusce efficitur egestas elit at gravida. Praesent porttitor ex sed augue luctus, at rutrum nibh bibendum. Pellentesque ac fermentum sem. Nulla id elit nibh. Sed enim purus, lacinia eget lectus quis, sollicitudin vulputate magna. Donec et diam placerat, hendrerit est nec, ornare diam. Maecenas congue interdum augue, quis iaculis quam iaculis iaculis. In vulputate eros a tortor gravida interdum. Morbi ultrices, nisi vel interdum ornare, nisi justo feugiat turpis, eu laoreet sem nunc non nulla. Cras laoreet tincidunt nisl, ac feugiat sapien finibus quis. Nam viverra tincidunt justo quis tempor.</p>
-
-<p>Sed accumsan tortor eu nisl malesuada, id tempor massa malesuada. Aenean aliquam pellentesque libero, quis varius justo pharetra sed. Suspendisse tempus est quis fermentum sagittis. Donec libero ligula, imperdiet ut pharetra ut, pharetra in elit. Curabitur sit amet facilisis dolor. Sed id cursus enim. Mauris dictum massa nec justo lacinia imperdiet. Curabitur pretium, justo et pretium convallis, ex purus fermentum mi, vitae sollicitudin sapien purus non erat. Etiam eu lectus et leo suscipit tincidunt. Nulla facilisi. Pellentesque convallis felis sed faucibus vestibulum. Donec aliquam diam sed sollicitudin finibus. Aliquam erat volutpat.</p>
+ &lt;h3 id="pg2"&gt;Page 2&lt;/h3&gt;
+ 
+ &lt;div class="pg-brk-aft"&gt;
+   &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi volutpat sollicitudin ante, vel consequat est posuere ut. Suspendisse efficitur placerat mi ut mollis. Phasellus molestie nunc vitae placerat consequat. Fusce nec imperdiet mauris. Nulla sed aliquet erat. Phasellus porta tincidunt posuere.&lt;/p&gt;
+   &lt;p&gt;Cras ultricies blandit felis, non pharetra diam venenatis et. Sed vulputate nisl nec quam posuere, in pretium dui consectetur. Ut id augue a tellus tincidunt dictum in at nulla. Proin lobortis orci auctor, ullamcorper orci sed, faucibus ligula. Aliquam interdum euismod nisl gravida varius.&lt;/p&gt;
+ &lt;/div&gt;
+  
+  &lt;h3 id="pg3"&gt;Page 2&lt;/h3&gt;
+  &lt;p&gt;Nulla condimentum risus non maximus mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum sit amet purus at euismod. Sed rhoncus id ligula sit amet maximus. In non elit vitae mi interdum rhoncus a at dolor. Duis sed ex velit. Nunc auctor ex a urna aliquet tincidunt.&lt;/p&gt;</code></pre>
+</details>

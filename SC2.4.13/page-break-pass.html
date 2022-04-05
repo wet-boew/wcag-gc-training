@@ -2,11 +2,18 @@
 title: WCAG 2.2 - SC 2.4.13 Page break navigation - Pass
 ---
 
-<p>On this page the class <code>.pg=brk-aft</code> is used to create page breaks navigation right after the element on which it's set on. The page is failing WCAG success criteria on page break navigation (SC2.4.13) since there is no mecanesim in place for users to easally locate and navigate to each page breaks and because some element following certain page breaks don't have a unique ID in order to create anchor links.</p>
+<p>On this page the class <code>.pg=brk-aft</code> is used to create page breaks navigation right after the element on which it's set on. The page is failing WCAG success criteria on page break navigation (SC2.4.13) since there is no mecanesim in place for users to easally locate and navigate to each page breaks and because some element following certain page breaks don't have a unique ID in order to create anchor links. A unique ID as been applied to the element following each page break and a list of pages with ancnhor links as been added on top of the page so users can easally locate and navigate to available page breaks.</p>
+
+<h2>List of pages</h2>
+  <ul>
+    <li><a href="#pg1">Page 1</a></li>
+    <li><a href="#pg2">Page 2</a></li>
+    <li><a href="#pg3">Page 3</a></li>
+  </ul>
   
   <span class="pg-brk-aft"></span>
   
-  <h3>Page 1</h3>
+  <h3 id="pg1">Page 1</h3>
   
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt malesuada sapien at porttitor. Nunc luctus porta justo, feugiat hendrerit ante auctor ut. Nunc et odio quis nisl euismod dapibus. Mauris eget ultricies nibh. Donec posuere lacus at viverra malesuada. Morbi imperdiet, dui at imperdiet feugiat, velit mi imperdiet arcu, id semper ante libero at tellus.</p>
   
@@ -23,14 +30,21 @@ title: WCAG 2.2 - SC 2.4.13 Page break navigation - Pass
    <p>Cras ultricies blandit felis, non pharetra diam venenatis et. Sed vulputate nisl nec quam posuere, in pretium dui consectetur. Ut id augue a tellus tincidunt dictum in at nulla. Proin lobortis orci auctor, ullamcorper orci sed, faucibus ligula. Aliquam interdum euismod nisl gravida varius.</p>
  </div>
   
-  <h3>Page 3</h3>
+  <h3 id="pg3">Page 3</h3>
   <p>Nulla condimentum risus non maximus mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum sit amet purus at euismod. Sed rhoncus id ligula sit amet maximus. In non elit vitae mi interdum rhoncus a at dolor. Duis sed ex velit. Nunc auctor ex a urna aliquet tincidunt.</p>
 
 <details class="mrgn-tp-lg">
 	<summary>Code</summary>
-<pre><code>&lt;span class="pg-brk-aft"&gt;&lt;/span&gt;
+<pre><code>&lt;h2&gt;List of pages&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#pg1"&gt;Page 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#pg2"&gt;Page 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#pg3"&gt;Page 3&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
   
-  &lt;h3&gt;Page 1&lt;/h3&gt;
+  &lt;span class="pg-brk-aft"&gt;&lt;/span&gt;
+  
+  &lt;h3 id="pg1"&gt;Page 1&lt;/h3&gt;
   
   &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt malesuada sapien at porttitor. Nunc luctus porta justo, feugiat hendrerit ante auctor ut. Nunc et odio quis nisl euismod dapibus. Mauris eget ultricies nibh. Donec posuere lacus at viverra malesuada. Morbi imperdiet, dui at imperdiet feugiat, velit mi imperdiet arcu, id semper ante libero at tellus.&lt;/p&gt;
   
@@ -47,6 +61,6 @@ title: WCAG 2.2 - SC 2.4.13 Page break navigation - Pass
    &lt;p&gt;Cras ultricies blandit felis, non pharetra diam venenatis et. Sed vulputate nisl nec quam posuere, in pretium dui consectetur. Ut id augue a tellus tincidunt dictum in at nulla. Proin lobortis orci auctor, ullamcorper orci sed, faucibus ligula. Aliquam interdum euismod nisl gravida varius.&lt;/p&gt;
  &lt;/div&gt;
   
-  &lt;h3&gt;Page 3&lt;/h3&gt;
+  &lt;h3 id="pg3"&gt;Page 3&lt;/h3&gt;
   &lt;p&gt;Nulla condimentum risus non maximus mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum sit amet purus at euismod. Sed rhoncus id ligula sit amet maximus. In non elit vitae mi interdum rhoncus a at dolor. Duis sed ex velit. Nunc auctor ex a urna aliquet tincidunt.&lt;/p&gt;</code></pre>
 </details>

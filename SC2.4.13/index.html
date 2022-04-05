@@ -10,7 +10,34 @@ title: SC 2.4.13 Page Break Navigation
 
 <p>When applying this class, the next element on the page must have a unique id and a way to navigate to it such as an anchor link must be abailable on the page.</p>
 
-<h4>Code example</h4>
+<h3>Working Example</h3>
+
+<h2>List of pages</h2>
+  <ul>
+    <li><a href="#pg1">Page 1</a></li>
+    <li><a href="#pg2">Page 2</a></li>
+    <li><a href="#pg3">Page 3</a></li>
+  </ul>
+  
+  <h3 id="pg1">Page 1</h3>
+  
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt malesuada sapien at porttitor. Nunc luctus porta justo, feugiat hendrerit ante auctor ut. Nunc et odio quis nisl euismod dapibus. Mauris eget ultricies nibh. Donec posuere lacus at viverra malesuada. Morbi imperdiet, dui at imperdiet feugiat, velit mi imperdiet arcu, id semper ante libero at tellus.</p>
+  <p>Phasellus iaculis lorem elit, vitae rhoncus lectus posuere vel. Vestibulum sodales sem at elit pharetra, a consectetur ante vehicula. Etiam eu accumsan est.</p>
+  <p>Nunc nibh velit, lobortis eu est a, pretium fermentum metus. In imperdiet venenatis consectetur. Vestibulum nec egestas purus. Sed finibus nisl dolor. Nunc non sem scelerisque, elementum ligula quis, egestas ante. Pellentesque commodo at est vel consectetur.</p>
+  <p class="pg-brk-aft">Morbi a tortor dui. Suspendisse bibendum velit vel ante euismod blandit. Donec tincidunt sapien eget posuere sagittis. Nullam et posuere est, at ullamcorper sapien. Ut pretium rutrum sodales. Maecenas sapien velit, posuere vel fringilla ac, dapibus et magna.</p>
+
+ <h3 id="pg2">Page 2</h3>
+ 
+ <div class="pg-brk-aft">
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi volutpat sollicitudin ante, vel consequat est posuere ut. Suspendisse efficitur placerat mi ut mollis. Phasellus molestie nunc vitae placerat consequat. Fusce nec imperdiet mauris. Nulla sed aliquet erat. Phasellus porta tincidunt posuere.</p>
+   <p>Cras ultricies blandit felis, non pharetra diam venenatis et. Sed vulputate nisl nec quam posuere, in pretium dui consectetur. Ut id augue a tellus tincidunt dictum in at nulla. Proin lobortis orci auctor, ullamcorper orci sed, faucibus ligula. Aliquam interdum euismod nisl gravida varius.</p>
+ </div>
+  
+  <h3 id="pg3">Page 2</h3>
+  <p>Nulla condimentum risus non maximus mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum sit amet purus at euismod. Sed rhoncus id ligula sit amet maximus. In non elit vitae mi interdum rhoncus a at dolor. Duis sed ex velit. Nunc auctor ex a urna aliquet tincidunt.</p>
+
+<details class="mrgn-tp-lg">
+	<summary>Code</summary>
 <pre><code>&lt;h2&gt;List of pages&lt;/h2&gt;
   &lt;ul&gt;
     &lt;li&gt;&lt;a href="#pg1"&gt;Page 1&lt;/a&gt;&lt;/li&gt;
@@ -34,3 +61,4 @@ title: SC 2.4.13 Page Break Navigation
   
   &lt;h3 id="pg3"&gt;Page 2&lt;/h3&gt;
   &lt;p&gt;Nulla condimentum risus non maximus mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum sit amet purus at euismod. Sed rhoncus id ligula sit amet maximus. In non elit vitae mi interdum rhoncus a at dolor. Duis sed ex velit. Nunc auctor ex a urna aliquet tincidunt.&lt;/p&gt;</code></pre>
+</details>

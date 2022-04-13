@@ -2,6 +2,24 @@
 title: WCAG 2.2 - SC 2.4.13 Page break navigation - Fail
 ---
 
+<script>
+var pgbrk = $( '.pg-brk-aft' ),
+msg = "WCAG SC 2.4.13 - The page break (.pg-brk-aft) is not ";
+
+if( pgbrk.length > 0 ){
+	pgbrk.each( function(){
+		var id = $( this ).next().attr( "id" );
+		if( id ){
+			if( !$( "a[href*=" + id + "]" ).length ){
+				console.warn( msg + "linked in current page for id: " + id );
+			}
+		}else{
+			console.warn( msg + "linkable, no 'id' attribute found." );
+		}
+	});
+}
+</script>
+
 <p>On this page the class <code>.pg-brk-aft</code> is used to create page breaks navigation right after the element on which it's set on. The page is failing WCAG success criteria on page break navigation (SC2.4.13) since there is no mecanesim in place for users to easally locate and navigate to each page breaks and because some element following certain page breaks don't have a unique ID in order to create anchor links.</p>
   
   <span class="pg-brk-aft"></span>
@@ -50,21 +68,3 @@ title: WCAG 2.2 - SC 2.4.13 Page break navigation - Fail
   &lt;h3&gt;Page 3&lt;/h3&gt;
   &lt;p&gt;Nulla condimentum risus non maximus mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum sit amet purus at euismod. Sed rhoncus id ligula sit amet maximus. In non elit vitae mi interdum rhoncus a at dolor. Duis sed ex velit. Nunc auctor ex a urna aliquet tincidunt.&lt;/p&gt;</code></pre>
 </details>
-
-<script>
-var $pgbrk = $( '.pg-brk-aft' ),
-msg = "WCAG SC 2.4.13 - The page break (.pg-brk-aft) is not ";
-
-if( $pgbrk.length > 0 ){
-	$pgbrk.each( function(){
-		var id = $( this ).next().attr( "id" );
-		if( id ){
-			if( !$( "a[href*=" + id + "]" ).length ){
-				console.warn( msg + "linked in current page for id: " + id );
-			}
-		}else{
-			console.warn( msg + "linkable, no 'id' attribute found." );
-		}
-	});
-}
-</script>

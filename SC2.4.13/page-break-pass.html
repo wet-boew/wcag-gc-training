@@ -3,7 +3,7 @@ title: WCAG 2.2 - SC 2.4.13 Page break navigation - Pass
 ---
 
 <script>
-SetTimeout( () =? { var $pgbrk = $( '.pg-brk-aft' ),
+SetTimeout(() => { var $pgbrk = $( '.pg-brk-aft' ),
 	msg = "WCAG SC 2.4.13 - The page break (.pg-brk-aft) is not ";
 
 	if( $pgbrk.length > 0 ){
@@ -18,7 +18,7 @@ SetTimeout( () =? { var $pgbrk = $( '.pg-brk-aft' ),
 			}
 		});
 	}
-}, 1000);
+}, 1000 );
 </script>
 
 <p>On this page the class <code>.pg-brk-aft</code> is used to create page breaks navigation right after the element on which it's set on. The page is failing WCAG success criteria on page break navigation (SC2.4.13) since there is no mecanesim in place for users to easally locate and navigate to each page breaks and because some element following certain page breaks don't have a unique ID in order to create anchor links. A unique ID as been applied to the element following each page break and a list of pages with ancnhor links as been added on top of the page so users can easally locate and navigate to available page breaks.</p>

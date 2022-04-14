@@ -3,21 +3,22 @@ title: WCAG 2.2 - SC 2.4.13 Page break navigation - Fail
 ---
 
 <script>
-setTimeout( var $pgbrk = $( '.pg-brk-aft' ),
-msg = "WCAG SC 2.4.13 - The page break (.pg-brk-aft) is not ";, 1000);
+setTimeout(() => {var $pgbrk = $( '.pg-brk-aft' ),
+	msg = "WCAG SC 2.4.13 - The page break (.pg-brk-aft) is not ";, 1000);
 
-if( $pgbrk.length > 0 ){
-	$pgbrk.each( function(){
-		var id = $( this ).next().attr( "id" );
-		if( id ){
-			if( !$( "a[href*=" + id + "]" ).length ){
-				console.warn( msg + "linked in current page for id: " + id );
+	if( $pgbrk.length > 0 ){
+		$pgbrk.each( function(){
+			var id = $( this ).next().attr( "id" );
+			if( id ){
+				if( !$( "a[href*=" + id + "]" ).length ){
+					console.warn( msg + "linked in current page for id: " + id );
+				}
+			}else{
+				console.warn( msg + "linkable, no 'id' attribute found." );
 			}
-		}else{
-			console.warn( msg + "linkable, no 'id' attribute found." );
-		}
-	});
-}
+		});
+	}
+}, 5000);
 </script>
 
 <p>On this page the class <code>.pg-brk-aft</code> is used to create page breaks navigation right after the element on which it's set on. The page is failing WCAG success criteria on page break navigation (SC2.4.13) since there is no mecanesim in place for users to easally locate and navigate to each page breaks and because some element following certain page breaks don't have a unique ID in order to create anchor links.</p>
